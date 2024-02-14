@@ -19,11 +19,6 @@ namespace Proj1
         List<int> selectedNumbers = new List<int>();
 
 
-        //form2 vars
-        int totalPos = 0;
-        int totalNeg = 0;
-        int totalZero = 0;
-
 
         public Form1()
         {
@@ -58,8 +53,6 @@ namespace Proj1
             labelRandNum.Text = randomNumber.ToString();
         }
 
-
-
         private void radioButtonSlow_CheckedChanged(object sender, EventArgs e)
         {
             speed = 300;
@@ -67,33 +60,12 @@ namespace Proj1
         }
 
 
-
-        private void listBoxSelectedNums_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void radioButtonFast_CheckedChanged(object sender, EventArgs e)
         {
             speed = 150;
             timer1.Interval = speed;
         }
 
-
-        private void labelRandNum_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelRandNum_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void Form1_Click(object sender, EventArgs e)
         {

@@ -81,7 +81,6 @@
             this.labelRandNum.TabIndex = 3;
             this.labelRandNum.Text = "?";
             this.labelRandNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRandNum.Click += new System.EventHandler(this.labelRandNum_Click_1);
             this.labelRandNum.MouseClick += new System.Windows.Forms.MouseEventHandler(this.labelRandNum_MouseClick_1);
             // 
             // groupBoxRadBtns
@@ -159,7 +158,6 @@
             this.Controls.Add(this.textBoxNumber);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.Form1_Click);
             this.groupBoxRadBtns.ResumeLayout(false);
             this.groupBoxRadBtns.PerformLayout();

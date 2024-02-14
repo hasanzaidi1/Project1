@@ -24,10 +24,6 @@ namespace Proj1
             f1.Enabled = false;
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
 
         public void DisplaySelectedNumbers(List<int> selectedNumbers)
         {
