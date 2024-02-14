@@ -121,10 +121,7 @@ namespace Proj1
                         form2.DisplaySelectedNumbers(selectedNumbers);
                         form2.Calculate(selectedNumbers);
                     }
-                    else if (result == DialogResult.Cancel)
-                    {
-                        // Do nothing, don't open Form2
-                    }
+                 
                 }
 
             }
