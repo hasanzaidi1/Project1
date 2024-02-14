@@ -20,6 +20,8 @@ namespace Proj1
         public Form2()
         {
             InitializeComponent();
+            Form1 f1 = (Form1)Application.OpenForms["Form1"];
+            f1.Enabled = false;
         }
 
         private void Form2_Load(object sender, EventArgs e)

@@ -109,25 +109,22 @@ namespace Proj1
                 selectedNumbers.Add(clickedNumber);
                 labelSelectedNumList.Text = string.Join(", ", selectedNumbers);
 
-                if (selectedNumbers.Count == 5)
+                if (selectedNumbers.Count == 15)
                 {
-
-
                     DialogResult result = MessageBox.Show("You have selected all 15 numbers", "Program ends", MessageBoxButtons.OK);
-                    if (result != DialogResult.OK)
+
+                    if (result == DialogResult.OK)
                     {
-                        
                         Form2 form2 = new Form2();
                         form2.Show();
 
                         form2.DisplaySelectedNumbers(selectedNumbers);
                         form2.Calculate(selectedNumbers);
-                        
-                        
-                    } 
-
-
-
+                    }
+                    else if (result == DialogResult.Cancel)
+                    {
+                        // Do nothing, don't open Form2
+                    }
                 }
 
             }
